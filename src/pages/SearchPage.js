@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import { useLocation } from "react-router-dom";
 
 function SearchPage() {
-  return (
-    <div>SearchPage</div>
-  )
+  const location = useLocation();
+  console.log("location", location);
+  return <div>SearchPage</div>;
 }
 
 export default SearchPage;

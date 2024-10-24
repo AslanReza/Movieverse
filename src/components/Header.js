@@ -2,19 +2,11 @@ import React, { useEffect, useState } from "react";
 import logo from "../assets/Logo-3.png";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
+import { navigation } from "../constants/nav";
 const Header = () => {
   const [searchInput, setSearchInput] = useState("");
   const navigate = useNavigate();
-  const navigation = [
-    {
-      label: "TV",
-      href: "tv",
-    },
-    {
-      label: "Movies",
-      href: "movies",
-    },
-  ];
+
   useEffect(() => {
     navigate(`/search?q=${searchInput}`);
   }, [searchInput]);
@@ -54,7 +46,7 @@ const Header = () => {
             placeholder="Search"
             className="hidden lg:block border-none bg-transparent px-4 py-1 outline-none"
           />
-          <div className="text-2xl text-white cursor-pointer">
+          <div className="hidden lg:text-2xl text-white cursor-pointer">
             <CiSearch />
           </div>
         </div>
