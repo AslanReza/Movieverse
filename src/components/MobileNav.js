@@ -3,8 +3,8 @@ import { mobileNav } from "../constants/nav";
 import { NavLink } from "react-router-dom";
 const MobileNav = () => {
   return (
-    <section className="lg:hidden h-12 bg-neutral-600 bg-opacity-45 fixed bottom-0 w-full">
-      <div className="flex items-center justify-between h-full">
+    <section className="lg:hidden h-12 bg-black bg-opacity-75 backdrop-blur-2xl fixed bottom-0 z-20 w-full">
+      <div className="flex items-center  text-neutral-700 justify-evenly h-full">
         {mobileNav.map((nav, index) => {
           return (
             <NavLink
