@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/Logo-3.png";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import navLogo from "../assets/nav.png";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
 import { navigation } from "../constants/nav";
 const Header = () => {
@@ -11,10 +11,10 @@ const Header = () => {
     navigate(`/search?q=${searchInput}`);
   }, [searchInput]);
   return (
-    <header className="fixed top-0 w-full h-16 bg-neutral-700 bg-opacity-75">
-      <div className="container mx-auto px-2 flex items-center h-full">
+    <header className="fixed top-0 w-full h-16 z-40 bg-black bg-opacity-75">
+      <div className="container mx-auto px-3 flex items-center h-full">
         <Link to={"/"}>
-          <img src={logo} alt="Logo" width={124} />
+          <img className="rounded-md" src={navLogo} alt="Logo" width={124} />
         </Link>
         <nav
           className="hidden lg:flex items-center
@@ -46,7 +46,10 @@ const Header = () => {
             placeholder="Search"
             className="hidden lg:block border-none bg-transparent px-4 py-1 outline-none"
           />
-          <div className="hidden lg:text-2xl text-white cursor-pointer">
+          <div
+            className="text-2xl text-white hidden lg:block cursor-pointer"
+            href="/search"
+          >
             <CiSearch />
           </div>
         </div>

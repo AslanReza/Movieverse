@@ -4,7 +4,7 @@ import { RiMovie2Line } from "react-icons/ri";
 import { CiSearch } from "react-icons/ci";
 export const navigation = [
   {
-    label: "TV Shows",
+    label: "TV",
     href: "tv",
     icon: <PiTelevision />,
   },
@@ -20,10 +20,11 @@ export const mobileNav = [
     href: "/",
     icon: <CiHome />,
   },
-  ...navigation,
   {
     label: "Search",
     href: "/search",
     icon: <CiSearch />,
   },
+  ...navigation,
+  
 ];
