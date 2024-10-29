@@ -4,11 +4,14 @@ import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
 import { navigation } from "../constants/nav";
 const Header = () => {
-  const [searchInput, setSearchInput] = useState("");
+  const location = useLocation();
+  const removeSpace = location?.search?.slice(3)?.split("%20")?.join(" ");
+  const [searchInput, setSearchInput] = useState(removeSpace);
   const navigate = useNavigate();
-
   useEffect(() => {
-    navigate(`/search?q=${searchInput}`);
+    if (searchInput) {
+      navigate(`/search?q=${searchInput}`);
+    }
   }, [searchInput]);
   return (
     <header className="fixed top-0 w-full h-16 z-40 bg-black bg-opacity-75">

@@ -63,12 +63,12 @@ const HeroHeader = () => {
                 </button>
               </div>
               <div className="absolute top-0 w-full h-full bg-gradient-to-t from-neutral-900 to-transparent"></div>
-              <div className="container  mx-auto ">
-                <div className="absolute bottom-0 max-w-md px-4">
+              <div className="container  mx-auto  ">
+                <div className="absolute bg-black/30 my-2 p-1 rounded-xl bottom-0 max-w-sm px-4 left-[50%] translate-x-[-50%]">
                   <h2 className="font-bold text-2xl lg:text-4xl text-white drop-shadow-3xl">
                     {data?.title || data?.name}
                   </h2>
-                  <p className=" text-ellipsis line-clamp-3 my-2 ">
+                  <p className="text-ellipsis line-clamp-3 my-2 ">
                     {data.overview}
                   </p>
                   <div className=" flex gap-4 items-center">
@@ -79,13 +79,13 @@ const HeroHeader = () => {
                       </span>
                     </div>
                     <span>|</span>
-                    <div className="flex items-center justify-start">
+                    {/* <div className="flex items-center justify-start">
                       <p>View : {Number(data.popularity).toFixed(0)}</p>
                       <span className="text-neutral-600 pl-0.5 text-md align-middle">
                         <PiEyeDuotone />
                       </span>
                     </div>
-                    <span>|</span>
+                    <span>|</span> */}
                     <div className="flex items-center justify-start">
                       <p>
                         Language :{" "}
