@@ -10,7 +10,7 @@ export const navigation = [
   },
   {
     label: "Movies",
-    href: "movies",
+    href: "movie",
     icon: <RiMovie2Line />,
   },
 ];
@@ -22,7 +22,7 @@ export const mobileNav = [
   },
   {
     label: "Search",
-    href: "/search",
+    href: "search",
     icon: <CiSearch />,
   },
   ...navigation,
