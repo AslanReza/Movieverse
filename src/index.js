@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { RouterProvider } from "react-router-dom";
 import router from "./routes/index";
 import axios from "axios";
+import "react-tooltip/dist/react-tooltip.css";
 import { Provider } from "react-redux";
 import { store } from "./app/store";
 
