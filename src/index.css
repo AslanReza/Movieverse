@@ -13,8 +13,18 @@ body {
   scroll-behavior: smooth;
   @apply bg-neutral-900 text-neutral-300 p-0 m-0;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.example-container .example-diff-arrow {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.884);
+}
+
+.example-container .example-diff-arrow .example-arrow {
+  background-color: rgb(255, 255, 255);
+}
+.shadow-box-area {
+  box-shadow: #ffffff 0px 0px 6px 0px;
 }
