@@ -67,9 +67,11 @@ const Header = () => {
           href="/contact"
           data-tooltip-id="my-tooltip-diff"
           data-tooltip-delay-hide={500}
-          className="example-container cursor-pointer my-anchor-element flex items-baseline gap-1 lg:text-2xl lg:mr-5 text-xl text-neutral-600 hover:text-white"
+          className="example-container cursor-pointer my-anchor-element flex items-baseline gap-1 lg:text-2xl lg:mr-5 text-xl  hover:text-white"
         >
-          <GrContact />
+          <GrContact 
+          className="
+          active:text-white"/>
           <Tooltip
             className="example-diff-arrow"
             classNameArrow="example-arrow"
