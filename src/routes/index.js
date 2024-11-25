@@ -6,6 +6,8 @@ import SearchPage from "../pages/SearchPage";
 import DetailsPage from "../pages/DetailsPage";
 import PrivacyPolicyPage from "../pages/PrivacyPolicyPage";
 import ContactPage from "../pages/ContactPage";
+import AboutPage from "../pages/AboutPage";
+import HelpPage from "../pages/HelpPage";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,6 +32,18 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <ContactPage />,
+      },
+      {
+        path: "privacy",
+        element: <PrivacyPolicyPage />,
+      },
+      {
+        path: "about",
+        element: <AboutPage />,
+      },
+      {
+        path: "help",
+        element: <HelpPage />,
       },
     ],
   },
