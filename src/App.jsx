@@ -41,8 +41,8 @@ function App() {
       <div className="min-h-[91.8vh]">
         <Outlet />
       </div>
-      {/* <Footer /> */}
-      {/* <MobileNav /> */}
+      <Footer />
+      <MobileNav />
     </main>
   );
 }
