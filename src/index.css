@@ -28,3 +28,26 @@ code {
 .shadow-box-area {
   box-shadow: #ffffff 0px 0px 6px 0px;
 }
+.accordion {
+  @apply bg-transparent rounded-t-lg cursor-pointer flex items-center justify-between transition-[background-color] duration-[0.6s] ease-[ease] p-[8px] border-[none];
+  outline: none;
+}
+.accordion:hover,
+.active {
+  @apply bg-transparent;
+}
+.accordion__title {
+  @apply font-bold text-neutral-200 text-sm;
+}
+.accordion__icon {
+  @apply transition-transform duration-[0.6s] ease-[ease] ml-auto;
+}
+.rotate {
+  @apply rotate-90;
+}
+.accordion__content {
+  @apply bg-transparent px-4 rounded-b-lg overflow-hidden transition-[max-height] duration-[0.6s] ease-[ease];
+}
+.accordion__text {
+  @apply font-normal text-sm p-[8px];
+}
