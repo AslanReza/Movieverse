@@ -63,8 +63,8 @@ const HeroHeader = () => {
                 </button>
               </div>
               <div className="absolute top-0 w-full h-full bg-gradient-to-t from-neutral-900 to-transparent"></div>
-              <div className="container mx-auto">
-                <div className="absolute bg-black/30 my-2 p-1 rounded-xl bottom-0 max-w-sm px-4">
+              <div className="container mx-auto flex justify-center">
+                <div className="absolute bg-black/30 my-2 mx-auto p-1 rounded-xl bottom-0  max-w-sm px-4">
                   <h2 className="font-bold text-2xl lg:text-4xl text-white drop-shadow-3xl">
                     {data?.title || data?.name}
                   </h2>
