@@ -44,6 +44,11 @@ Check out the live demo: [Movieverse.com](https://movieverse-website.vercel.app/
    ```bash
    npm start
 
+## Authors 👨‍💻
+
+This project was developed and maintained by [Aslan Reza](https://github.com/AslanReza).  
+For a list of contributors and acknowledgements, see the [AUTHORS.md](./AUTHORS.md) file.
+
 ## Contribution 🤝
 
 Contributions are welcome! Feel free to fork the repository and submit a pull request. For major changes, open an issue to discuss them first.
