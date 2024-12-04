@@ -53,6 +53,10 @@ For a list of contributors and acknowledgements, see the [AUTHORS.md](./AUTHORS.
 
 Contributions are welcome! Feel free to fork the repository and submit a pull request. For major changes, open an issue to discuss them first.
 
+## Security 🚨
+
+If you discover any security vulnerabilities in **Movieverse**, please review the [SECURITY.md](./SECURITY.md) file for instructions on how to report them responsibly.
+
 ## License 📜
 
 This project is licensed under the [MIT License](./LICENSE).
